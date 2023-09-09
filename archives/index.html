@@ -1,207 +1,389 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- Head tag -->
 <head>
     <meta charset="utf-8">
-    
-    <title>Archives | Yes!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="现实性来源于实物和关系，这就是琴">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="/themes/hexo-theme-Anisina/source/favicon">
+    <link rel="alternate" type="application/atom+xml" title="琴" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        
+        
+    </title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon/favicon.ico">
-    
-<link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://Spetacularll.github.io/archives/">
 
+    <!-- Bootstrap Core CSS -->
     
-<link rel="stylesheet" href="/css/tagplugins.css">
-
-    
-<link rel="stylesheet" href="/css/highlight.css">
-
-    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
 
 
-    <!-- rss -->
+    <!-- Custom CSS -->
     
+<link rel="stylesheet" href="/css/blog-style.css">
+
+
+    <!-- Pygments Github CSS -->
     
-      <link rel="alternate" href="/atom.xml" title="Yes!" type="application/atom+xml" />
-    
+<link rel="stylesheet" href="/css/syntax.css">
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div class="blog-header">
-   <a id="menu-nav-icon"><img src="/image/menu.png"/></a>
-   <div class="nav-container">
-     <nav id="main-nav">
-       
-         <a class="main-nav-link" href="/">Home</a>
-       
-         <a class="main-nav-link" href="/archives">Archives</a>
-       
-     </nav>
-   </div>
-   <!--
-   <div id="search-form-wrap">
-     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Spetacularll.github.io"></form>
-   </div>
- -->
-    <h1 class="blog-title">Yes!</h1>
-    <p class="lead blog-description"></p>
-</div>
+<style>
 
-  <div id='main-part'>
-      
+    header.intro-header {
+        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    琴
+                </span>
+                's Blog
+            </a>
+        </div>
 
-<div class="article-index">
-      <div class="sidelist">
-        <div class="list">
-          
-              <h3>Archives</h3>
-          
-          
-          <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">Aug - 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">Jul - 2023</a><span class="archive-list-count">2</span></li></ul>          
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="main lists">
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+
+<!-- Page Header -->
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
+    <div class="row">
+        <header class="intro-header">
+            <div class="container">
+                <div class="site-heading text-center">
+                    <div class="about-me">
+                        <!--移动端头部显示-->
+                        <img src=""/>
+                        <h5><a href="/about/">草人</a></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<!-- Main Content -->
+<div class="container custom-haojen-container">
+    <!-- Post Container -->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            <!-- Main Content -->
+
+
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/08/03/The sound and The fury /">
+        <h2 class="post-title">
+            The sound and The fury
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-08-03
+        </p>
         
-        <!-- Date and Author -->
-<p class="blog-post-meta">
-    2023-08-03
-    
-</p>
+        <div class="post-content-preview">
+            <p>
+                鸽了一个暑假的读后感。我忏悔吧！
 
-<div class="blog-post">
-    <!-- Title -->
-    <!--
-    <h3 class="blog-post-title-archive">
-        <a href="/2023/08/03/The sound and The fury /">
-            The Sound and the Fury
-        </a>
-    </h3>
-  -->
-    
-      <h3 class="blog-post-title-archive">
-        <a href="/2023/08/03/The%20sound%20and%20The%20fury%20/">The Sound and the Fury</a>
-      </h3>
-    
-
-
-    <hr />
-    
-
-    
+假象一个原始的部落，没有复杂的社会，只是一些聚落，大多就是有一个部落长老；这时，一位部落中的人发现了一种方法，只需要按照一定的顺序做出一些动作，我们就能获得食物，获得雨水，获得力量，这时，扩大的欲望就相应地诞生了，于是，相应地要去满足：开垦土地、制造工具、捕猎..
+            </p>
+        </div>
+    </a>
 
 </div>
 
+<hr>
+
+
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/07/20/Rain/">
+        <h2 class="post-title">
+            The Sound and The Fury
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-07-20
+        </p>
         
-        <!-- Date and Author -->
-<p class="blog-post-meta">
-    2023-07-20
-    
-</p>
-
-<div class="blog-post">
-    <!-- Title -->
-    <!--
-    <h3 class="blog-post-title-archive">
-        <a href="/2023/07/20/Rain/">
-            The Sound and the Fury
-        </a>
-    </h3>
-  -->
-    
-      <h3 class="blog-post-title-archive">
-        <a href="/2023/07/20/Rain/">The Sound and the Fury</a>
-      </h3>
-    
+        <div class="post-content-preview">
+            <p>
+                我们拥有的时间如断崖，又如倾倒的海啸。
+先引用一下wiki的简介
 
 
-    <hr />
-    
-
-    
+该书原题《黄昏》，现在的题目是取材于莎士比亚《麦克白》中的台词。该书以麦克白的败亡、绝望与虚无，来映照就南方解体后大家族子弟的心境。这部小说是福克纳最喜爱的作品，他将它看做自己“最美好的失败”、“最勇敢的失败”、“最辉煌的失败..
+            </p>
+        </div>
+    </a>
 
 </div>
 
-        
-        <!-- Date and Author -->
-<p class="blog-post-meta">
-    2023-07-19
-    
-</p>
+<hr>
 
-<div class="blog-post">
-    <!-- Title -->
-    <!--
-    <h3 class="blog-post-title-archive">
-        <a href="/2023/07/19/HI/">
+
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/07/19/HI/">
+        <h2 class="post-title">
             HI!
-        </a>
-    </h3>
-  -->
-    
-      <h3 class="blog-post-title-archive">
-        <a href="/2023/07/19/HI/">HI!</a>
-      </h3>
-    
-
-
-    <hr />
-    
-
-    
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-07-19
+        </p>
+        
+        <div class="post-content-preview">
+            <p>
+                My first blog!你好！Is there anybody out there ?
+刚刚下楼看橘猫，它在这几天台风来的时候跑到隔壁宿舍楼下的机房里边，爬到了服务器箱最上面，我去机房窗口往里面观望，什么都看不到。然后听见在相反的方向有猫在叫，回头看到它迈着步子向我走来，还蛮不错的。摸了几分..
+            </p>
+        </div>
+    </a>
 
 </div>
 
-        
-        
+<hr>
 
+
+
+
+<!-- 翻页 pager -->
+
+<ul class="pager">
+    
+    
+</ul>
+
+
+        </div>
+        <!-- Sidebar Container -->
+        <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+
+            <!-- About Me -->
+            <section class="visible-md visible-lg" style="padding: 0 18px">
+                <div class="short-about">
+                    <!--侧边栏头像-->
+                    
+                    <h5><a href="/about/">草人</a></h5>
+                    
+                    <hr>
+                    <!-- SNS Link 社交 -->
+                    <ul class="list-inline">
+                        
+                        
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Featured Tags  标签 -->
+            
+
+            
+
+        </div>
     </div>
 </div>
 
-  </div>
-  <!-- Footer -->
-  <div id="footer">
-  <div id="footer-social">
-    
-    
-    
-    
-    
-    
-</div>
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
 
-  <p id="footer-info">
-    &copy; 2023 Yes!<br>
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
-    Theme <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
-  </p>
+                
 
-  <div id="busuanzi">
-    <span id="busuanzi_container_site_pv">
-      &hearts;
-    Total visits: <span id="busuanzi_value_site_pv"></span>
-    </span>
-  </div>
-  <!--
-  <div id="footer-info">
-    &copy; 2023 Yes!<br>
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-  </div>
--->
-</div>
+                
 
-  <!-- After footer scripts -->
-  <!-- Disqus Comments -->
+                
 
+                
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 琴 2023
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a target="_blank" rel="noopener" href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
 
-<script src="/js/main.js"></script>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
 
 
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/blog.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Spetacularll.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
 </body>
 
 </html>

@@ -1,253 +1,509 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- Head tag -->
 <head>
     <meta charset="utf-8">
-    
-    <title>Yes!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="现实性来源于实物和关系，这就是琴">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="/themes/hexo-theme-Anisina/source/favicon">
+    <link rel="alternate" type="application/atom+xml" title="琴" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        
+        
+    </title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/favicon/favicon.ico">
-    
-<link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://Spetacularll.github.io/">
 
+    <!-- Bootstrap Core CSS -->
     
-<link rel="stylesheet" href="/css/tagplugins.css">
-
-    
-<link rel="stylesheet" href="/css/highlight.css">
-
-    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
 
 
-    <!-- rss -->
+    <!-- Custom CSS -->
     
+<link rel="stylesheet" href="/css/blog-style.css">
+
+
+    <!-- Pygments Github CSS -->
     
-      <link rel="alternate" href="/atom.xml" title="Yes!" type="application/atom+xml" />
-    
+<link rel="stylesheet" href="/css/syntax.css">
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div class="blog-header">
-   <a id="menu-nav-icon"><img src="/image/menu.png"/></a>
-   <div class="nav-container">
-     <nav id="main-nav">
-       
-         <a class="main-nav-link" href="/">Home</a>
-       
-         <a class="main-nav-link" href="/archives">Archives</a>
-       
-     </nav>
-   </div>
-   <!--
-   <div id="search-form-wrap">
-     <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://Spetacularll.github.io"></form>
-   </div>
- -->
-    <h1 class="blog-title">Yes!</h1>
-    <p class="lead blog-description"></p>
-</div>
+<style>
 
-  <div id='main-part'>
-      
-    <div class="main">
-<div class="blog-post">
-    <!-- Title -->
-    
-      <h1 class="blog-post-title">
-        <a href="/2023/08/03/The%20sound%20and%20The%20fury%20/">The Sound and the Fury</a>
-      </h1>
-    
-    <!-- Date and Author -->
-    <p class="blog-post-meta">
-        2023-08-03
+    header.intro-header {
+        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+" data-ishome = "true" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    琴
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+
+<style>
+
+    .custom-haojen-container .post-preview:nth-of-type(1),
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        text-align: center;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        background-size: cover;
+        padding: 0;
+        height: 300px;
+        display: table;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+    /*去掉诗歌的背景图片*/
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) {
+        background-image: none !important;
+        background-color: rgba(255, 248, 220, 0.5);
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) h2,
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta,
+    .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+        text-shadow: 0 0 40px rgba(0, 0, 0, 1);
+        letter-spacing: 1px;
+        color: #fff;
+        margin-top: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .custom-haojen-container .post-preview:nth-child(1) .post-meta {
+        font-size: .9em;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-child(1) .post-subtitle {
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-family: unset;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .75)
+    }
+
+    /*不显示摘要*/
+    .custom-haojen-container .post-preview:nth-child(1) .post-content-preview {
+        display: none
+    }
+
+    /*只第一个显示背景图片*/
+    .custom-haojen-container .post-preview:not(:nth-child(1)) {
+        background-image: none !important;
+    }
+
+    /*第一个分界线去掉*/
+    .custom-haojen-container hr:nth-of-type(1) {
+        display: none;
+    }
+
+    /*主题*/
+    .custom-haojen-container .post-preview:nth-of-type(1) > a {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /*诗词标题*/
+    .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+        font-size: 35px;
+        font-family: STKaiti;
+        color: rgba(0, 0, 0, .8);
+    }
+
+    .custom-haojen-container .post-preview-poetry:nth-of-type(1) .post-meta {
+        color: #0e2231;
+    }
+
+    @media (max-width: 768px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 240px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 28px !important;
+            margin-top: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .custom-haojen-container .post-preview:nth-of-type(1) > a {
+            padding: 20px
+        }
+    }
+
+    /*手机屏幕*/
+    @media (max-width: 400px) {
+        .custom-haojen-container .post-preview:nth-child(1) {
+            height: 195px;
+        }
+
+        .custom-haojen-container .post-preview-poetry:nth-child(1) h2 {
+            font-size: 20px !important;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) .post-subtitle {
+            font-size: 16px;
+        }
+
+        .custom-haojen-container .post-preview:nth-child(1) a {
+            padding: 30px 20px;
+        }
+    }
+</style>
+
+<!-- Page Header -->
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
+    <div class="row">
+        <header class="intro-header">
+            <div class="container">
+                <div class="site-heading text-center">
+                    <div class="about-me">
+                        <!--移动端头部显示-->
+                        <img src=""/>
+                        <h5><a href="/about/">草人</a></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<!-- Main Content -->
+<div class="container custom-haojen-container">
+    <!-- Post Container -->
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            <!-- Main Content -->
+
+
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/08/03/The sound and The fury /">
+        <h2 class="post-title">
+            The sound and The fury
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-08-03
+        </p>
         
-    </p>
+        <div class="post-content-preview">
+            <p>
+                鸽了一个暑假的读后感。我忏悔吧！
 
-    
-
-    <!-- Content -->
-    
-    <!-- Only display the Read More link if we are displaying an excerpt -->
-    
-
-    <hr />
-
-    
-
-    
-
-
+假象一个原始的部落，没有复杂的社会，只是一些聚落，大多就是有一个部落长老；这时，一位部落中的人发现了一种方法，只需要按照一定的顺序做出一些动作，我们就能获得食物，获得雨水，获得力量，这时，扩大的欲望就相应地诞生了，于是，相应地要去满足：开垦土地、制造工具、捕猎..
+            </p>
+        </div>
+    </a>
 
 </div>
-</div>
+
+<hr>
 
 
-    <div class="main">
-<div class="blog-post">
-    <!-- Title -->
-    
-      <h1 class="blog-post-title">
-        <a href="/2023/07/20/Rain/">The Sound and the Fury</a>
-      </h1>
-    
-    <!-- Date and Author -->
-    <p class="blog-post-meta">
-        2023-07-20
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/07/20/Rain/">
+        <h2 class="post-title">
+            The Sound and The Fury
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-07-20
+        </p>
         
-    </p>
-
-    
-
-    <!-- Content -->
-    <p>我们拥有的时间如断崖，又如倾倒的海啸。</p>
-<p>先引用一下wiki的简介</p>
-<blockquote>
-<blockquote>
-<p>该书原题《黄昏》，现在的题目是取材于莎士比亚《麦克白》中的台词。该书以麦克白的败亡、绝望与虚无，来映照就南方解体后大家族子弟的心境。这部小说是福克纳最喜爱的作品，他将它看做自己“最美好的失败”、“最勇敢的失败”、“最辉煌的失败”，正是这部结构复杂、大胆实验的作品为他赢得了世界声誉。</p>
-</blockquote>
-</blockquote>
-<p>下面引用的第二段是剧透。</p>
-<blockquote>
-<blockquote>
-<p>这部小说分四个部分，涉及到四天时间，打破了传统小说的叙事顺序。各种事件在书中跨越时间界限交织在一起，再现了一个大家族几十年的兴衰历程。在结构上，全书采取一种类似对位法的技巧，四个部分既相互独立，又相互映衬。前三个部分是康普生家三个儿子班吉、昆丁和杰生的内心独白，而第四个部分则是以第三人称叙述黑人女仆迪尔西在康普生家的所见所闻，填补前三个部分的空白。由于采用了意识流手法，不同时空的事件往往被故意混杂在一起，增加了作品的复杂性。<br>小说叙述的是杰弗生镇上显赫一时的康普生一家，现已没落，只剩破败的房子和一个老女仆。家中幼子班吉是一个智障，33岁时只有3岁智力，故事即是以他错乱的回忆开头。康普生家大女儿凯蒂与富家子弟私通后怀上孩子，不得已嫁给体面人家，然而事情终于败露，被逐出门。大儿子昆丁心中满是家族荣誉，丑闻发生后声称凯蒂的孩子是与自己乱伦的结果，投河自尽。康普生先生也于1912年病逝。二儿子杰生注重实利，想依靠凯蒂丈夫混个银行职位，但因为凯蒂被逐出家门而失去机会，他还窃取了凯蒂私生女的赡养费，然而这笔钱最终还是被凯蒂女儿偷了回去。    </p>
-</blockquote>
-</blockquote>
-<p>你说伟大的作品之所以伟大的原因是什么呢，我看之前有人讲到The Brothers Karamazov 时也对比了一下被称为伟大的这部作品和一些当时的流行小说的剧情，得出「不是剧情，而是作品中体现的作者心中的，让我们为人的东西区分出不同的作品，也就是作者的价值观」 在上帝死去的今天，这个价值观有很大的分量。</p>
-<p>这本书采用的意识流手法混杂的事件是设计过的，福克纳采用这种手法增加的复杂性实际上是对现实中人的记忆的复现，触景生情，而他更进一步，把班吉变成了无情的触景生情机器，（没有，班吉还是具有简单的感情的）<br>有一些像意象的概念，可以说班吉的叙事章节通过他记忆中的意象串起来，但他是天生的傻子，所以没什么逻辑，纯粹的感受堆叠。</p>
-<p>之前看到过一个说法是福克纳的小说也是描写的冰山一角，和海明威一样，不过福克纳是「脸紧贴着冰山，感受到的所有」，而海明威是「隔着一段距离描绘浮出水面的全部」。班吉的这个感受堆叠给我感受到了一点这种感觉，他的章节时间不是连续的，会有时间转换。</p>
-<pre><code>我们走出门口。阳光很冷，也很耀眼。
-“你上哪儿去啊。”威尔许说，“你不见得以为是到镇上去吧，是不是啊。”
-我们走在沙沙响的落叶上。铁院门冰冷冷的。
-“你最好把手插在兜里。”威尔许说，“你的手捏在门上会冻坏的，那你怎么办。你干吗不待在屋子里等他们呢。”
-他把我的手塞到我口袋里去。我能听见他踩在落叶上的沙沙声。
-我能闻到冷的气味。铁门是冰冷冷的。“这儿有几个山核桃。好哎。蹿到那棵树上去了。瞧呀，这儿有一只松鼠，班吉。”
-我已经一点也不觉得铁门冷了，不过我还能闻到耀眼的冷的气味。
-“你还是把手插回到兜里去吧。”
-
-凯蒂在走来了。接着她跑起来了，她的书包在背后一跳一跳，晃到这边又晃到那边。
-“嗨，班吉。”凯蒂说。她打开铁门走进来，就弯下身子。凯蒂身上有一股树叶的香气。“你是来接我的吧。”她说，“你是来等凯蒂的吧。你怎么让他两只手冻成这样，威尔许。”“我是叫他把手放在兜里的。”威尔许说，“他喜欢抓住铁门。”“你是来接凯蒂的吧。”她说，一边搓着我的手。“什么事。你想告诉凯蒂什么呀。”凯蒂有一股树的香味，当她说我们这就要睡着了的时候，她也有这种香味。
-</code></pre>
-<p>紧跟着下一段就有时间转换，有些译版采用不同的字体标明从这里，叙事时间开始改变。</p>
-<pre><code>你哼哼唧唧的干什么呀，勒斯特说。
-等我们到小河沟你还可以看他们的嘛。哪。给你一根吉姆生草。
-他把花递给我。我们穿过栅栏，来到空地上。
-</code></pre>
-<p>这种手法如果拆开来看会丢失一些连续性，推荐读一读小说原文这段（啥译文都行，我推荐英文版是装腔作势！）因为他不在转换时间时添加更多的辅助文字，这一点跟今敏的PB采用的剪辑手法有异曲同工之妙。<br>小说中班吉讲完了之后是昆丁，昆丁是个文艺比，去哈佛读了几年，因而他的章节文字更混乱（<br>所以我看得也很开心。</p>
-<p>引用一句作者讲的</p>
-<blockquote>
-<p>The past is never dead, it’s not even past.<br>    过去从未消逝，甚至未曾过去。</p>
-</blockquote>
-<p>我对这本书的印象是，家族的最后成员，对他们曾代代相传的东西的回应。<br>那是剪影，幻觉的集。而书中的人感受的时间是很有意思的，一段过去不断地纠缠，无法逃脱。</p>
-<p>这部作品表现的美国南方现实环境十分令人窒息，方伯林的译版中后记讲到曾经帮他翻译过很多书的美国同学都因为「过于黑暗」而不愿意帮助他翻译这本书。<br>「过于黑暗」这部分我觉得是福克纳想要写出来的，出于警示作用吧，而普鲁斯特不也说过天才在于他展现了什么吗，这个黑暗实际上是那时美国南方的真实写照，在福克纳很多小说里都有体现出来过——对黑人的血腥压迫建立起的种种辉煌，在林肯废除黑奴制的近几十年，社会本身的惯性对于这个废除的反抗冲突，激发了种种社会矛盾，于是优秀作品便有材可取。</p>
-<p>这个惯性在个人身上，个人的惯性集合起来变成为了社会风气，这是过去对现在的强烈控制欲望，过去甚至本身成为了一种生物，而它们的生命载体就是人类思维的时间。所有能称得上「教育」的行为（文字教育，风气教化）就变成了这种生物延续自己生命的方法。生物以国家、宗教的名字出现，<br>在相信了「教育」描绘的图景的人们的身上升起，人们聚集，影子就是它。风气教化部分的教育对应一个更大的存在——母体文化，如果愿意的话，它也是一种生物。</p>
-<p>有人从弗洛伊德的角度入手，去分析书中写的四位人物，我这里从这个生物的角度入手写写：</p>
-<p>班吉代表的东西我曾在『禅与摩托车维修艺术』和『2001太空漫游』中看过，那是某种最初始的感觉，人类最开始望向星空的那一撇，是所谓「良质」，是这种感觉的无限堆叠，没有过去生物的存在；老大昆丁则是那种生命的体现，它以愿望破灭为自己生命的终结，而自杀则是过去生命对现在的投射失败作出的决定。杰森的求而不得的是他自己的愿望，去哈佛读书，一个银行工作的职位，都因为现实(凯蒂所为)而破灭了。黑人厨娘迪尔西则是应对那个南方社会的一种好的方法。爱，某种投掷行为，对特定欲望的满足，对特定欲望的构建。<br>凯蒂是暗线，在三人的故事中都有她，她对家庭中的各位都有着爱，但对哥哥的禁忌之情的求之不得导向了另一种毁灭，即使双方都对彼此有感情，但是理智让他们始终没有在一起。历史对她的影响似乎没那么深，她后来跑到欧洲，和一堆名人有过关系（书中提到有某个明星，纳粹党的将军），也因而赚了很多钱寄回家，养育她未婚先孕产下的女儿（为了纪念大哥昆丁她给女儿起了一样的名字），她的生活跳出了这本书的主线描述，大概是因为她与书中其他人都不同吧，我感觉是她没有那么被束缚住，毕竟最后她是家族里那一辈当中唯一脱离了康普森家族的土地的。</p>
-<p>截取一段书里杰森的言论：</p>
-<blockquote>
-<p>「1865年」他会说，「林肯从康普森家解放了黑奴。1933年，杰森康普森从黑奴手中解放了康普森家族。」  </p>
-</blockquote>
-<p>虽说书中附录讲到他是康普森家族第一个也是最后一个清醒的人，不过他实在是被自己的恨意拖垮了。</p>
-<p>时间————奇妙的概念，一个函数中的参数，而且是速度概念的基础，还有种种如因果线的物理概念，以及————过去生命的载体。</p>
-
-    <!-- Only display the Read More link if we are displaying an excerpt -->
-    
-
-    <hr />
-
-    
-
-    
+        <div class="post-content-preview">
+            <p>
+                我们拥有的时间如断崖，又如倾倒的海啸。
+先引用一下wiki的简介
 
 
+该书原题《黄昏》，现在的题目是取材于莎士比亚《麦克白》中的台词。该书以麦克白的败亡、绝望与虚无，来映照就南方解体后大家族子弟的心境。这部小说是福克纳最喜爱的作品，他将它看做自己“最美好的失败”、“最勇敢的失败”、“最辉煌的失败..
+            </p>
+        </div>
+    </a>
 
 </div>
-</div>
+
+<hr>
 
 
-    <div class="main">
-<div class="blog-post">
-    <!-- Title -->
-    
-      <h1 class="blog-post-title">
-        <a href="/2023/07/19/HI/">HI!</a>
-      </h1>
-    
-    <!-- Date and Author -->
-    <p class="blog-post-meta">
-        2023-07-19
+
+<div class="post-preview "
+     style="background-image: url('')">
+    <a href="/2023/07/19/HI/">
+        <h2 class="post-title">
+            HI!
+        </h2>
+        <p class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> 2023-07-19
+        </p>
         
-    </p>
-
-    
-
-    <!-- Content -->
-    <h1 id="My-first-blog"><a href="#My-first-blog" class="headerlink" title="My first blog!"></a>My first blog!</h1><h2 id="你好！"><a href="#你好！" class="headerlink" title="你好！"></a>你好！</h2><p>Is there anybody out there ?</p>
-<p>刚刚下楼看橘猫，它在这几天台风来的时候跑到隔壁宿舍楼下的机房里边，爬到了服务器箱最上面，我去机房窗口往里面观望，什么都看不到。<br>然后听见在相反的方向有猫在叫，回头看到它迈着步子向我走来，还蛮不错的。<br>摸了几分钟，又跟它在黑暗里待了一会，它看到被清理出来的玩偶，就去趴在地上打滚，抓玩偶玩。玩偶很小，它玩得似乎挺开心的。</p>
-
-    <!-- Only display the Read More link if we are displaying an excerpt -->
-    
-
-    <hr />
-
-    
-
-    
-
-
+        <div class="post-content-preview">
+            <p>
+                My first blog!你好！Is there anybody out there ?
+刚刚下楼看橘猫，它在这几天台风来的时候跑到隔壁宿舍楼下的机房里边，爬到了服务器箱最上面，我去机房窗口往里面观望，什么都看不到。然后听见在相反的方向有猫在叫，回头看到它迈着步子向我走来，还蛮不错的。摸了几分..
+            </p>
+        </div>
+    </a>
 
 </div>
+
+<hr>
+
+
+
+
+<!-- 翻页 pager -->
+
+<ul class="pager">
+    
+    
+</ul>
+
+
+        </div>
+        <!-- Sidebar Container -->
+        <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+
+            <!-- About Me -->
+            <section class="visible-md visible-lg" style="padding: 0 18px">
+                <div class="short-about">
+                    <!--侧边栏头像-->
+                    
+                    <h5><a href="/about/">草人</a></h5>
+                    
+                    <hr>
+                    <!-- SNS Link 社交 -->
+                    <ul class="list-inline">
+                        
+                        
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Featured Tags  标签 -->
+            
+
+            
+
+        </div>
+    </div>
 </div>
 
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 琴 2023
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a target="_blank" rel="noopener" href="https://haojen.github.io/">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/blog.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://Spetacularll.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 
 
 
+<!-- Google Analytics -->
 
 
-  </div>
-  <!-- Footer -->
-  <div id="footer">
-  <div id="footer-social">
-    
-    
-    
-    
-    
-    
-</div>
 
-  <p id="footer-info">
-    &copy; 2023 Yes!<br>
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
-    Theme <a href="https://github.com/Suolawangzai/hexo-theme-nebula" target="_blank">nebula</a>
-  </p>
-
-  <div id="busuanzi">
-    <span id="busuanzi_container_site_pv">
-      &hearts;
-    Total visits: <span id="busuanzi_value_site_pv"></span>
-    </span>
-  </div>
-  <!--
-  <div id="footer-info">
-    &copy; 2023 Yes!<br>
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-  </div>
--->
-</div>
-
-  <!-- After footer scripts -->
-  <!-- Disqus Comments -->
+<!-- Baidu Tongji -->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-<script src="/js/main.js"></script>
+  _st('install','','2.0.0');
+</script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
 </body>
 
 </html>
